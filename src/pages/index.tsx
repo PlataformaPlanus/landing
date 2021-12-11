@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       <div className="w-full h-screen bg-primary flex items-center justify-center relative">
         <Tilt
           options={{ max: 10 }}
-          className="flex items-center justify-center lg:space-x-32 p-8 rounded-lg"
+          className="flex items-center justify-center lg:space-x-32 glass p-8 rounded-lg"
         >
           <h1 className="text-2xl lg:text-6xl font-bold text-white text-right">
             Solução
