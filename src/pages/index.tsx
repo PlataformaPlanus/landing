@@ -8,10 +8,20 @@ const Home: NextPage = () => {
   return (
     <div>
       <SeoHead />
-      <div className="w-full h-screen bg-primary flex items-center justify-center relative">
+      <div className="w-full h-screen bg-primary flex items-center justify-center">
+        <div className="absolute w-screen h-20 top-0 pl-12 lg:pl-20 py-4">
+          <div className="h-[10rem] w-[8rem] lg:h-[5rem] lg:w-[10rem] relative ">
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src="/main.png"
+              alt="Simbolo planus"
+            />
+          </div>
+        </div>
         <Tilt
           options={{ max: 10 }}
-          className="flex items-center justify-center lg:space-x-32 glass p-8 rounded-lg"
+          className="flex items-center justify-center lg:space-x-16 glass p-8 rounded-lg relative"
         >
           <h1 className="text-2xl lg:text-6xl font-bold text-white text-right">
             Solução
@@ -22,15 +32,13 @@ const Home: NextPage = () => {
             <br />
             De Equipes.
           </h1>
-          <div>
-            <div className="h-[10rem] w-[8rem] lg:h-[30rem] lg:w-[20rem] relative ">
-              <Image
-                layout="fill"
-                objectFit="contain"
-                src="/planus-simbolo.png"
-                alt="Simbolo planus"
-              />
-            </div>
+          <div className="h-[10rem] w-[8rem] lg:h-[30rem] lg:w-[30rem] relative ">
+            <Image
+              layout="fill"
+              objectFit="contain"
+              src="/screen.png"
+              alt="Simbolo planus"
+            />
           </div>
         </Tilt>
         <div
